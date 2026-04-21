@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT trainers (trainer*)>
+<!ATTLIST trainer trainerID ID #REQUIRED>
+<!ELEMENT trainer (name,qualifications*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT qualifications (title,institution,year)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT institution (#PCDATA)>
+<!ELEMENT year (#PCDATA)>

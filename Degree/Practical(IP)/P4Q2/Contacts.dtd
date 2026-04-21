@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT contacts (contact*)>
+<!ELEMENT contact (name, phone*, knows,email+,website*)>
+<!ATTLIST contact personID ID #REQUIRED>
+<!ATTLIST contact gender (MALE|FEMALE) #REQUIRED> 
+<!ELEMENT name (first+, middle?, last)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT middle (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ATTLIST phone kind (Home | Work | Cell | Fax) "Home">
+<!ELEMENT knows EMPTY>
+<!ATTLIST knows contact IDREFS #IMPLIED>

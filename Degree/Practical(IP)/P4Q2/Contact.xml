@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "Contacts.dtd">
+<contacts>
+    <contact personID="P001">
+        <name>
+            <first>qwe</first>
+            <first>ASD</first>
+            <middle>123</middle>
+            <last>456</last>
+        </name>
+        <phone kind="Home">012-1234567</phone>
+        <knows></knows>
+        <email>123@gmail.com</email>
+        <email>456@gmail.com</email>
+        <website>www.123.com</website>
+    </contact>
+    <contact personID="P002">
+        <name>
+            <first>qwe</first>
+            <last>456</last>
+        </name>
+        <phone kind="Work">012-2345678</phone>
+        <knows></knows>
+        <email>123@gmail.com</email>
+        <website>www.123.com</website>
+    </contact>
+    <contact personID="P003">
+        <name>
+            <first>qwe</first>
+            <last>456</last>
+        </name>
+        <phone kind="Cell">012-34565789</phone>
+        <phone kind="Fax">012-4567890</phone>
+        <knows></knows>
+    </contact>
+    <contact personID="P004">
+        <name>
+            <first>qwe</first>
+            <last>456</last>
+        </name>
+        <phone kind="Fax">012-4567890</phone>
+        <knows contact="P001"></knows>
+        <email>123@gmail.com</email>
+        <website>www.123.com</website>
+    </contact>
+</contacts>
+

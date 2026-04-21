@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+<!DOCTYPE catalog SYSTEM "Catalog.dtd">
+<catalog>
+    <book>
+        <title>Hello World</title>
+        <author>Java</author>
+        <author>Java 2</author>
+        <publisher>Java Publisher</publisher>
+        <bookISBN>
+            <bookISBN10>8910101010</bookISBN10> 
+        </bookISBN>
+    </book>
+    <book>
+        <title>Good Bye</title>
+        <author>C++</author>
+        <publisher>C++ Publisher</publisher>
+        <bookISBN>
+            <bookISBN13>978-1234567890</bookISBN13> 
+        </bookISBN>
+    </book>
+</catalog>
+

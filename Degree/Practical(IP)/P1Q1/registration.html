@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            a {
+                background-color: skyblue;
+                color: white;
+                padding: 1em 1.5em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                cursor: pointer;
+                background-color: #555;
+            }
+            input[type=submit], input[type=reset] {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover, input[type=reset]:hover{
+                background-color: #555;
+            }
+        </style>
+    </head>
+
+    <body style="margin-left: 10%;">
+        <h2>Registration Form</h2>
+        <form action="process_registration.php" method="POST">
+            <p>Name<br><input type="text" name="name" value="" size="30" /></p>
+            <p>Mobile Phone<br><input type="text" name="mobile" value="" size="30" /></p>
+            <p>Gender
+                <input type="radio" name="gender" value="m" />Male
+                <input type="radio" name="gender" value="f" />Female
+            </p>
+            <p>
+                <input type="submit" value="Submit" name="submit" />
+                <input type="reset" value="Reset" />
+            </p>
+        </form>
+        <br/>
+        <a href="../index.php">Home Page</a>
+    </body>
+</html>

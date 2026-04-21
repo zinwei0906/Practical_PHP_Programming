@@ -1,0 +1,145 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 19, 2022, 12:26:58 AM
+    Author     : RSD2G6TanZinWei <tanzw-wm19@student.tarc.edu.my>
+*/
+
+﻿.FormTable {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.Column1, .Column2 {
+    font-size: 20px;
+    font-weight: 900;
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+.Column1 {
+    width: 200px;
+}
+
+.Column2 {
+    width: 300px;
+}
+
+.title {
+    font-size: 25px;
+    text-align: left;
+}
+
+.inputtext1 {
+    float: left;
+    border: 1px solid black;
+    font-size: 20px;
+    width: 280px;
+    padding: 5px 5px 5px 5px;
+}
+
+.wrapper1 {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 27%;
+    margin-bottom: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper2 {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 7%;
+    margin-bottom: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.link_wrapper {
+    position: relative;
+}
+
+.link_wrapper a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 45px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+}
+
+.link_wrapper a:hover {
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+}
+
+.link_wrapper a:hover + .icon {
+    border: 3px solid #2ecc71;
+    right: -25%;
+}
+
+.wrapper1 .icon svg, .wrapper1 .link_wrapper a:hover, .wrapper1 .link_wrapper a:hover + .icon {
+    border: 3px solid red;
+    fill: red;
+    color: red;
+}
+
+.link_wrapper a .btnClear, .btnAdd {
+    width: 180px;
+    height: 40px;
+    line-height: 45px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    background: none;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+.link_wrapper a .btnClear:hover {
+    color: red;
+    background: none;
+    border: none;
+}
+
+.link_wrapper a .btnAdd:hover {
+    color: #2ecc71;
+    background: none;
+    border: none;
+}

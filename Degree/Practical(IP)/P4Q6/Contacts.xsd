@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="contacts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contact" type="contactType" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="contactType">
+        <xs:sequence>
+            <xs:element name="name" type="nameType" />
+            <xs:element name="phone" type="phoneType" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="knows" type="knowsType" maxOccurs="unbounded" />
+            <xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="website" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="nameType">
+        <xs:sequence>
+            <xs:element name="first" type="xs:string" />
+            <xs:element name="middle" type="xs:string" maxOccurs="unbounded" />
+            <xs:element name="last" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="phoneType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="kind" type="kindType" default="Home" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+
+    <xs:simpleType name="kindTypee">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Home" />
+            <xs:enumeration value="Work" />
+            <xs:enumeration value="Cell" />
+            <xs:enumeration value="Fax" />
+        </xs:restriction>       
+    </xs:simpleType>
+    
+    <xs:complexType name="knowType">
+        <xs:attribute name="" />
+    </xs:complexType>
+</xs:schema>

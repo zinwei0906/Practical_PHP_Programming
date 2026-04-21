@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TZW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tableStyle.css" />
+        <style>
+            .link {
+                background-color: skyblue;
+                color: white;
+                padding: 1em 1.5em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .link:hover {
+                cursor: pointer;
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body style="margin-left: 10%;">
+        <form action="AddNewSubject.php" method="POST">
+            <h1><u>Add New Subject</u></h1>
+            <table class="FormTable">
+                <tr>
+                    <td class="Column1">Subject Code</td>
+                    <td class="Column2"><input type="text" name="code" class="inputtext1" /> </td>
+                </tr>
+                <tr>
+                    <td class="Column1">Title</td>
+                    <td class="Column2"><input type="text" name="title" class="inputtext1" /> </td>
+                </tr>
+                <tr>
+                    <td class="Column1">Credit Value</td>
+                    <td class="Column2"><input type="number" name="credit" class="inputtext1" /> </td>
+                </tr>
+                <tr>
+                    <td class="Column1">Year of Study</td>
+                    <td class="Column2"><input type="number" name="year" class="inputtext1" /> </td>
+                </tr>
+            </table>
+            <!--Add Button-->
+            <div class="wrapper2">
+                <div class="link_wrapper">
+                    <a>
+                        <input type="submit" class="btnAdd" value="Add" />
+                    </a>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                        <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!--Clear Button-->
+            <div class="wrapper1">
+                <div class="link_wrapper">
+                    <a>
+                        <input type="reset" class="btnClear" value="Clear" />
+                    </a>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                        <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br/><br/><br/><br/>
+        <br/><br/><br/><br/>
+        <a class="link" href="../index.php">Home Page</a>
+    </body>
+</html>

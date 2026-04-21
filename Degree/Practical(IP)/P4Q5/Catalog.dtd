@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT catalog (book)*>
+<!ELEMENT book (title, author*, publisher,bookISBN)*>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT bookISBN (bookISBN10|bookISBN13)>
+<!ELEMENT bookISBN10 (#PCDATA)>
+<!ELEMENT bookISBN13 (#PCDATA)>
+
+<!ATTLIST __ROOT__ version CDATA #REQUIRED>
+
